@@ -13,13 +13,13 @@
     "cloudinary": "^2.9.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.3.3",
-    "next": "^15.3.2",
+    "next": "^16.2.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
+    "eslint": "^10.1.0",
     "eslint-config-next": "15.1.6",
     "tailwindcss": "^4"
   }

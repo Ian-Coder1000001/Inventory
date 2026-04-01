@@ -12,6 +12,8 @@
 │   │   │   ├── [id]/
 │   │   │   │   └── route.js (1.0 KB)
 │   │   │   └── route.js (1.4 KB)
+│   │   ├── ping/
+│   │   │   └── route.js (0.5 KB)
 │   │   ├── products/
 │   │   │   ├── [id]/
 │   │   │   │   ├── sell/
@@ -26,7 +28,7 @@
 │   ├── dashboard/
 │   │   └── page.js (6.6 KB)
 │   ├── login/
-│   │   └── page.js (5.9 KB)
+│   │   └── page.js (6.0 KB)
 │   ├── favicon.ico (25.3 KB)
 │   ├── globals.css (1.4 KB)
 │   ├── layout.js (0.3 KB)
@@ -60,9 +62,9 @@
 │   └── seed.js (1.4 KB)
 ├── eslint.config.mjs (0.4 KB)
 ├── jsconfig.json (0.1 KB)
-├── middleware.js (0.1 KB)
 ├── next.config.mjs (0.1 KB)
-├── package-lock.json (235.0 KB)
+├── package-lock.json (219.5 KB)
 ├── package.json (0.5 KB)
 ├── postcss.config.mjs (0.1 KB)
+├── proxy.js (0.2 KB)
 └── README.md (1.4 KB)
