@@ -1,13 +1,15 @@
-import { FlatCompat } from "@eslint/eslintrc";
+import { nextCoreWebVitals } from "eslint-config-next";
 
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-});
-
+/** @type {import('eslint').Linter.Config[]} */
 const eslintConfig = [
-  ...compat.config({
-    extends: ["next/core-web-vitals"],
-  }),
+  {
+    plugins: {
+      "@next/next": nextCoreWebVitals,
+    },
+    rules: {
+      ...nextCoreWebVitals.rules,
+    },
+  },
 ];
 
 export default eslintConfig;
