@@ -11,10 +11,20 @@ export default function BatchSummaryBar({ products }) {
     { label: 'Profit', value: `KSH ${totalProfit.toLocaleString()}`, color: totalProfit >= 0 ? 'var(--green)' : 'var(--red)' },
   ];
 
-  return (
-    <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, background: 'rgba(8,11,16,0.98)', borderTop: '1px solid var(--border)', backdropFilter: 'blur(20px)', zIndex: 100 }}>
+
+return (
+    <div style={{ 
+      position: 'fixed', 
+      bottom: 0, 
+      left: 0, 
+      right: 0, 
+      background: 'rgba(8,11,16,0.98)', 
+      borderTop: '1px solid var(--border)', 
+      backdropFilter: 'blur(20px)', 
+      // Ensure this is lower than the Modal
+      zIndex: 100 
+    }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-        {/* Responsive Grid: 2 columns on mobile, 4 on laptop */}
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
@@ -23,8 +33,8 @@ export default function BatchSummaryBar({ products }) {
             <div key={i} style={{ 
               padding: '12px 16px', 
               borderRight: '1px solid var(--border)',
-              borderBottom: i < 2 ? '1px solid var(--border)' : 'none', // for 2-row mobile layout
-              '@media (min-width: 600px)': { borderBottom: 'none' }
+              // Added responsive border logic
+              borderBottom: i < 2 ? '1px solid var(--border)' : 'none',
             }}>
               <p style={{ fontSize: '9px', fontWeight: 600, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'DM Mono, monospace', marginBottom: '2px' }}>
                 {s.label}
@@ -39,6 +49,37 @@ export default function BatchSummaryBar({ products }) {
     </div>
   );
 }
+
+
+
+//   return (
+//     <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, background: 'rgba(8,11,16,0.98)', borderTop: '1px solid var(--border)', backdropFilter: 'blur(20px)', zIndex: 100 }}>
+//       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+//         {/* Responsive Grid: 2 columns on mobile, 4 on laptop */}
+//         <div style={{ 
+//           display: 'grid', 
+//           gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+//         }}>
+//           {stats.map((s, i) => (
+//             <div key={i} style={{ 
+//               padding: '12px 16px', 
+//               borderRight: '1px solid var(--border)',
+//               borderBottom: i < 2 ? '1px solid var(--border)' : 'none', // for 2-row mobile layout
+//               '@media (min-width: 600px)': { borderBottom: 'none' }
+//             }}>
+//               <p style={{ fontSize: '9px', fontWeight: 600, color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'DM Mono, monospace', marginBottom: '2px' }}>
+//                 {s.label}
+//               </p>
+//               <p style={{ fontSize: '15px', fontWeight: 700, color: s.color, fontFamily: 'Syne, sans-serif' }}>
+//                 {s.value}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 // export default function BatchSummaryBar({ products }) {
