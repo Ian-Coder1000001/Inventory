@@ -22,11 +22,21 @@
   --red-dim: #3d0c09;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { background: var(--bg); }
+/* MOBILE FIX: Prevent horizontal shaking */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg);
+  position: relative;
+}
 
 body {
-  background: var(--bg);
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
