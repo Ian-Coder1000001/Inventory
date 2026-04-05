@@ -5,7 +5,7 @@
 │   │   │       └── route.js (0.7 KB)
 │   │   ├── auth/
 │   │   │   ├── login/
-│   │   │   │   └── route.js (1.2 KB)
+│   │   │   │   └── route.js (1.8 KB)
 │   │   │   └── logout/
 │   │   │       └── route.js (0.2 KB)
 │   │   ├── batches/
@@ -32,7 +32,7 @@
 │   ├── favicon.ico (25.3 KB)
 │   ├── globals.css (1.4 KB)
 │   ├── layout.js (0.3 KB)
-│   └── page.js (0.1 KB)
+│   └── page.js (0.2 KB)
 ├── components/
 │   ├── ActivityFeed.jsx (3.1 KB)
 │   ├── AddBatchModal.jsx (0.0 KB)
@@ -60,10 +60,10 @@
 │   └── window.svg (0.4 KB)
 ├── scripts/
 │   └── seed.js (1.4 KB)
-├── eslint.config.mjs (0.4 KB)
+├── eslint.config.mjs (0.2 KB)
 ├── jsconfig.json (0.1 KB)
-├── next.config.mjs (0.1 KB)
-├── package-lock.json (219.5 KB)
+├── next.config.mjs (0.2 KB)
+├── package-lock.json (218.3 KB)
 ├── package.json (0.5 KB)
 ├── postcss.config.mjs (0.1 KB)
 ├── proxy.js (0.2 KB)
